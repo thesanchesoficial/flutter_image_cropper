@@ -12,6 +12,7 @@ import 'utils.dart';
 enum CropAspectRatioPreset {
   original,
   square,
+  ratio3x1,
   ratio3x2,
   ratio5x3,
   ratio4x3,
@@ -291,6 +292,8 @@ String aspectRatioPresetName(CropAspectRatioPreset? preset) {
       return 'original';
     case CropAspectRatioPreset.square:
       return 'square';
+    case CropAspectRatioPreset.ratio3x1:
+      return '3x1'; 
     case CropAspectRatioPreset.ratio3x2:
       return '3x2';
     case CropAspectRatioPreset.ratio4x3:
